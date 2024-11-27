@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.section1 h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.section1 p {
+  font-size: 20px;
+  color: rgb(84, 53, 113);
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.section1 div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.section1 div div button {
+  background-color: rgb(116, 35, 192);
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.section1 div div button:hover {
+  background-color: rgb(89, 36, 135);
+  transform: scale(1.1);
+}
+
+.section2 {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 200px;
+  display: none;
+  margin-bottom: 20px;
+}
+
+.shake {
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.footer {
+  background-color: #1e1c1c;
+  color: white;
+  text-align: end;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
